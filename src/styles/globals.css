@@ -49,31 +49,51 @@ button.secondary {
 }
 
 .main-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(255, 255, 255);
-    border-radius: 30px;
-    padding: 60px;
-    width: 550px;
+    border-radius: 20px;
+    padding: 56px;
+    max-width: 576px;
     text-align: center;
 }
 
 .main-info-container h1{
     font-weight: 800;
-    font-size: 2.56rem;
+    font-size: 2.625rem;
+    line-height: 1.0476190476;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main-info-container .intro{
+    max-width: 367px;
 }
 
 .main-info-container .disclaimer{
-    font-size: 0.75rem;
+    font-size: 0.865rem;
     color: rgb(126, 126, 126);
-    margin-top: 10px;
+    margin-top: 40px;
+    max-width: 464px;
 }
 
 .main-info-container .button-container{
-    display: flex;
-    flex-direction: column;
+    max-width: 367px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .main-info-container .button-container button{
-    margin: 5px;
+    margin: 5px 0;
+    width: 100%;
+    min-width: auto;
+}
+
+.main-info-container .browse{
+    font-weight: 500;
+    color: #111;
+    text-decoration: underline;
+    background: none;
+    border: none;
 }
