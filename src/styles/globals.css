@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    min-height: 64px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+button.primary {
+    background-color: rgb(2, 86, 254);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+button.secondary {
+    border: 1px solid rgb(2, 86, 254);
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 86, 254);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.ctfassets.net/ew96z4wsnz93/1cqr1UO17IlIj1J77o3NBd/2d0cf8cea28a387fc7d40e06dac595fe/CRO-NY24-hero_Desktop_Last-Call_Final__4___1_.jpg);
+}
+
+.main-info-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 60px;
+    width: 550px;
+    text-align: center;
+}
+
+.main-info-container h1{
+    font-weight: 800;
+    font-size: 2.56rem;
+}
+
+.main-info-container .disclaimer{
+    font-size: 0.75rem;
+    color: rgb(126, 126, 126);
+    margin-top: 10px;
+}
+
+.main-info-container .button-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main-info-container .button-container button{
+    margin: 5px;
+}
